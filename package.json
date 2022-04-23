@@ -1,0 +1,78 @@
+{
+  "name": "eslint-config-lifion-web",
+  "version": "1.0.0",
+  "description": "Lifion's ESLint config for the Web",
+  "keywords": [
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslintrc",
+    "javascript",
+    "lifion",
+    "react",
+    "styleguide",
+    "web"
+  ],
+  "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://eaviles@github.com/lifion/eslint-config-lifion-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifion/eslint-config-lifion-web/issues"
+  },
+  "homepage": "https://github.com/lifion/eslint-config-lifion-web#readme",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "!**/@.test.js"
+  ],
+  "engines": {
+    "node": ">=14.19.1"
+  },
+  "scripts": {
+    "build-docs": "commons",
+    "build-types": "commons",
+    "check-types": "commons",
+    "clean-types": "commons",
+    "eslint": "commons",
+    "prepare": "commons",
+    "prepublishOnly": "npm run build-types && npm run prettier",
+    "prettier": "commons",
+    "test": "commons",
+    "version": "commons"
+  },
+  "devDependencies": {
+    "core-commons": "^1.0.0-alpha.6",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-array-func": "^3.1.7",
+    "eslint-plugin-es6-recommended": "^0.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-jsdoc": "^39.2.7",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-no-constructor-bind": "^2.0.4",
+    "eslint-plugin-no-secrets": "^0.8.9",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-security": "^1.5.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sonarjs": "^0.13.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-switch-case": "^1.1.2",
+    "eslint-plugin-unicorn": "^42.0.0"
+  }
+}
